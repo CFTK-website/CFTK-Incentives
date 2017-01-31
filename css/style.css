@@ -1,0 +1,54 @@
+html {
+	overflow: hidden;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+#textbox>input {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	max-width: 120px;
+	text-align: center;
+}
+
+#submit {
+	position: relative;
+	cursor: pointer;
+	background: #0075A3;
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	margin-top: 10px;
+	border-radius: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#container {
+	position: relative;
+	margin: 20px auto;
+	display: inline-block;
+    	text-align: center;
+    	left: 50%;
+    	transform: translateX(-50%);
+}
+
+#content {
+	max-width: 800px;
+	min-width: 500px;
+	background: #7CC9AA;
+	margin-top: 10px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+}
+
+.incentive {
+	display: none;
+}
