@@ -12,11 +12,15 @@ function slideIncentive(incentive) {
             }
 
             for (i = counter; i < amountArray.length; i++) {
-                    var id = '#' + amountArray[i];
-                    $(id).slideUp('slow');
+                var id = '#' + amountArray[i];
+                $(id).slideUp('slow');
             }
         });
     } else {
+        for (i = counter; i < amountArray.length; i++) {
+            var id = '#' + amountArray[i];
+            $(id).slideUp('slow');
+        }
         $('#error-text').slideDown('slow');
     }
 }
@@ -24,8 +28,8 @@ function slideIncentive(incentive) {
 $(document).ready(function() {
     $('#submit').click(function() {
         var amount = $('input[name=amount]').val();
-        if(amount.charAt(0) == '$') {
-        	amount = amount.substring(1, amount.length);
+        if (amount.charAt(0) == '$') {
+            amount = amount.substring(1, amount.length);
         }
         slideIncentive(amount);
     });
